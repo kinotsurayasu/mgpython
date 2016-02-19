@@ -26,3 +26,18 @@ print z
 si={}
 z=dict([(x,(list['yasuhiro'][x]+list['takuro'][x])/2.0) for x in list['yasuhiro'] if x in list['takuro']])
 print z
+
+
+
+#自分以外の人の名前を抽出する関数を作りました。これで、自分以外の人について色々計算ができます。
+
+si={'yasuhiro':{'nike':5,'adidas':2,'puma':4},'takuro':{'adidas':5,'nike':4,'asics':1},'tomoko':{'nike':4,'puma':5}}
+
+def test(dic,person):
+    x=[item for item in dic if item!=person]
+    print x
+
+test(si,'yasuhiro')
+
+
+
