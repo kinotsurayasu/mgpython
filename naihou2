@@ -1,0 +1,5 @@
+#内包リストにfor文を二つ書けます
+
+def q3(val1,val2):
+	list=[(x,y) for x in range(1,val1) for y in range(1,val2)]
+	return list
